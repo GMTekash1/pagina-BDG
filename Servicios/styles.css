@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; /* Elimina el margen por defecto */
+    font-family: 'Arial', sans-serif;
+    background-color: #d1be9a; /* Fondo de color gris claro */
+}
+
+a {
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    color: #333333; /* Color de texto */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    border: 2px solid #ffa07a; /* Color de borde naranja suave */
+    padding: 30px; /* Aumenta el padding */
+    margin: 20px 20px 0 20px; /* Agrega márgenes superior y laterales */
+    width: calc(100% - 40px); /* Ajusta el ancho para considerar los márgenes laterales */
+    box-sizing: border-box; /* Asegura que el padding y el borde estén dentro del tamaño del elemento */
+    position: relative; /* Asegura que los elementos hijos se posicionen correctamente */
+    background-color: #ffffff; /* Color de fondo blanco */
+    color: #333333; /* Color de texto */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+p {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+    padding: 10px; /* Agrega un padding pequeño */
+    color: #333333; /* Color de texto */
+}
+
+ul {
+    list-style-type: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 20px; /* Agrega un margen general */
+}
+
+li {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    margin-bottom: 20px; /* Espacio entre las categorías */
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Alinea los elementos horizontalmente */
+    background-color: #ffffff; /* Fondo blanco */
+    border: 2px solid #ffa07a; /* Color de borde naranja suave */
+    padding: 10px; /* Padding */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para el título de la corneta */
+.corneta-titulo {
+    display: block; /* Cambia a bloque para ocupar todo el ancho disponible */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    padding: 20px; /* Aumenta el padding */
+    margin: 0; /* Elimina el margen */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    box-sizing: border-box; /* Asegura que el padding y el borde estén dentro del tamaño del elemento */
+    background-color: #ffffff; /* Color de fondo blanco */
+    color: #333333; /* Color de texto */
+    border-radius: 10px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.corneta-titulo:hover {
+    background-color: #ffb07a; /* Color de fondo al pasar el cursor */
+}
+
+li img {
+    margin-left: 10px; /* Agrega margen izquierdo para separar la imagen del texto */
+    width: 100px; /* Ajusta el tamaño a 100px */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.img-corner {
+    width: 150px; /* Ajusta el tamaño del logo */
+    height: auto;
+    display: block;
+    margin: 10px 0 0; /* Centra la imagen y agrega margen superior */
+    filter: hue-rotate(0deg); /* Mantiene el color original del logo */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.corneta-calderon, .corneta-profesional, .corneta-reglamentaria {
+    width: 50px; /* Ajusta el tamaño a 50px */
+    height: auto;
+    display: block;
+    margin-left: 10px; /* Agrega margen izquierdo para separar la imagen del texto */
+}
+
+a.volver-inicio {
+    position: absolute;
+    right: 10px; /* Posiciona el enlace a la derecha */
+    font-family: 'Arial', sans-serif;
+    color: #333333; /* Color de texto */
+    text-decoration: none;
+    padding: 10px; /* Aumenta el padding */
+    border: 2px solid #ffa07a; /* Color de borde naranja suave */
+    background-color: #ffffff; /* Color de fondo blanco */
+    box-sizing: border-box; /* Asegura que el padding y el borde estén dentro del tamaño del elemento */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+a.volver-inicio:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el cursor por encima */
+    background-color: #ffb07a; /* Color de fondo al pasar el cursor */
+}
+
+/* Estilos para los productos */
+.producto1, .producto2, .producto3, .producto4 {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-direction: row; /* Alinea los elementos de izquierda a derecha */
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Cambia el margen a la derecha */
+}
+
+.product img {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    background-color: #696565;
+    border: 3px solid black; /* Agrega un borde negro */
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-right: 20px;
+}
